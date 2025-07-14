@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="script.js"></script> -->
+    <title>Sign In Screen</title>
+  </head>
+
+  <body class="m-0 p-0">
+    <div class="relative w-full h-screen flex flex-col md:flex-row">
+      <div
+        class="relative z-10 w-full md:w-2/5 h-screen bg-white/90 backdrop-blur-md p-8 md:p-12 flex flex-col justify-center"
+      >
+        <div class="mb-6">
+          <img src="./images/Tinted Icon.png" alt="Logo" class="h-10 mb-4" />
+          <h2 class="text-4xl font-bold mb-2 text-gray-900">Welcome</h2>
+          <h2 class="text-4xl font-bold mb-2 text-gray-900">back</h2>
+          <p class="text-gray-600 mb-6">
+            You need to be signed in to access the project dashboard.
+          </p>
+        </div>
+
+        <form class="space-y-5">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">
+              Email or username
+            </label>
+            <input
+              type="email"
+              placeholder="wesley.mendoza@example.com"
+              class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">
+              Password
+            </label>
+            <div class="relative">
+              <input
+                type="password"
+                placeholder="••••••"
+                class="w-full border border-gray-300 rounded-md px-4 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-green-500"
+              />
+              <span
+                class="absolute inset-y-0 right-3 flex items-center text-gray-400 cursor-pointer"
+              >
+                👁️
+              </span>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between text-sm">
+            <label class="flex items-center">
+              <input type="checkbox" class="mr-2 accent-green-500 w-5 h-5" />
+              Keep me signed in
+            </label>
+            <a href="#" class="text-black-600 font-medium underline">
+              Forgot password?
+            </a>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-md"
+          >
+            Sign in
+          </button>
+
+          <button
+            type="button"
+            class="w-full border border-gray-300 text-gray-700 py-2 px-4 rounded-md flex justify-center items-center gap-2"
+          >
+            <img src="./images/GoogleImg.png" class="w-5 h-5" alt="Google" />
+            Sign in with Google
+          </button>
+
+          <p class="text-sm text-center text-gray-600">
+            Haven’t joined yet?
+            <a href="#" class="text-black font-medium hover:underline"
+              >Sign in</a
+            >
+          </p>
+        </form>
+      </div>
+
+      <div
+        class="absolute md:relative inset-0 md:inset-auto w-full md:w-3/5 h-screen z-0 overflow-hidden"
+      >
+        <img
+          src="./images/background-pic-second.jpg"
+          alt="Building"
+          class="w-full h-full object-cover brightness-50"
+        />
+      </div>
+    </div>
+  </body>
+</html>

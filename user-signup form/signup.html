@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <title>Sign Up Screen</title>
+  </head>
+  <body class="bg-gray-100 m-0 p-0">
+    <div class="relative w-full h-screen flex flex-col md:flex-row">
+      <div class="relative z-10 w-full md:w-2/5 h-screen bg-white/90 backdrop-blur-md p-8 md:p-12 flex flex-col justify-center">
+        <div class="mb-8">
+          <img src="./images/Tinted Icon.png" alt="logo" class="h-10 mb-4" />
+          <h1 class="text-3xl font-bold mb-2">Get started</h1>
+          <h1 class="text-3xl font-bold mb-2">With Blank</h1>
+          <p class="text-gray-600">
+            Join Blank for free today. No credit card required.
+          </p>
+        </div>
+
+        <form action="/" method="" class="space-y-4">
+          <div>
+            <label for="email" class="block text-sm font-medium">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="wesley.mendoza@example.com"
+              required
+              class="mt-1 block w-full px-4 py-2 border rounded-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
+            />
+          </div>
+
+          <div>
+            <label for="password" class="block text-sm font-medium">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Abcdef"
+              required
+              class="mt-1 block w-full px-4 py-2 border rounded-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
+            />
+          </div>
+
+          <div class="flex items-center">
+            <input type="checkbox" checked id="terms" class="mr-2 accent-green-500 w-5 h-5" />
+            <label for="terms" class="text-sm">
+              I agree to the
+              <a href="#" class="text-black-600 font-medium underline">terms of use</a> and
+              <a href="#" class="text-black-600 font-medium underline">privacy statement</a>.
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition"
+          >
+            Continue
+          </button>
+
+          <button
+            type="button"
+            class="w-full border py-2 px-4 rounded flex items-center justify-center space-x-2 hover:bg-gray-100"
+          >
+            <img src="./images/GoogleImg.png" class="w-5 h-5" alt="Google" />
+            <span>Continue with Google</span>
+          </button>
+        </form>
+
+        <p class="text-sm text-gray-600 mt-4 text-center">
+          Already have an account?
+          <a href="#" class="text-black-600 font-medium underline">Log in</a>
+        </p>
+      </div>
+
+      <div class="relative w-full md:w-3/5 h-screen overflow-hidden">
+        <img
+          src="./images/background-image.jpg"
+          alt="Background"
+          class="absolute inset-0 w-full h-full object-cover z-0"
+        />
+
+        <div class="absolute inset-0 bg-black/50 z-0"></div>
+
+        <div class="relative z-10 h-full flex flex-col justify-end p-6 md:p-10 text-white">
+          <h2 class="text-2xl font-semibold max-w-md text-green-400">
+            Blank is the ultimate time saver for small business owners like me.
+          </h2>
+          <p class="mt-4 text-lg">Brittany Stone</p>
+          <p class="text-sm">SnapVision</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
