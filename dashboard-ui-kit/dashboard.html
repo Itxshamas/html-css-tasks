@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="dashboard.css" />
   </head>
@@ -9,42 +10,62 @@
     <!-- Header -->
     <div class="topbar">
       <div class="icon-group">
-        <img src="./icons/pass-pending-line.svg" alt="Menu" class="icon menu-icon" />
-        <img src="./icons/Star.svg" alt="Star" class="icon star-icon" />
+        <button class="menu-toggle">
+          <img src="./icons/menu.svg" alt="Menu" class="icon" />
+        </button>
+        <img src="./icons/Header/two.svg" alt="Star" class="icon star-icon" />
+        <img
+          src="./icons/Header/three.svg"
+          alt="Search"
+          class="icon search-icon"
+        />
         <h1 class="topbar-title">Dashboards <span>/ Default</span></h1>
       </div>
 
       <div class="icon-group">
         <div class="search-box">
-          <img src="./icons/IconText.svg" alt="Search" class="icon search-icon" />
           <input type="text" placeholder="Search" />
-         <img src="./icons/Text.svg" alt="Search" class="icon search-icon" />
+          <img
+            src="./icons/Header/four.svg"
+            alt="Search"
+            class="icon search-icon"
+          />
+          <img
+            src="./icons/Header/five.svg"
+            alt="Settings"
+            class="icon settings-icon"
+          />
+        </div>
 
-        </div class="Icons">
-        <img src="./icons/ButtonBrightness.svg" alt="Settings" class="icon settings-icon" />
-        <img src="./icons/ButtonRefresh.svg" alt="Notifications" class="icon bell-icon" />
-        <img src="./icons/ButtonNotification.svg" alt="Notifications" class="icon bell-icon" />
-        <img src="./icons/ButtonSimple.svg" alt="Notifications" class="icon bell-icon" />
-        <div class="user-avatar">Y</div>
+        <img
+          src="./icons/Header/six.svg"
+          alt="Refresh"
+          class="icon refresh-icon"
+        />
+        <img
+          src="./icons/Header/seven.svg"
+          alt="Notifications"
+          class="icon bell-icon"
+        />
+        <img src="./icons/Header/eight.svg" alt="User" class="icon user-icon" />
+        <img src="./icons/Header/nine.svg" alt="User" class="icon user-icon" />
       </div>
     </div>
 
-    <!-- Sidebar -->
+    <!-- Left Sidebar -->
     <div class="left-sidebar">
       <div class="sidebar-header">
-        <img src="./icons/sidebarIconSet.svg" alt="Logo" class="logo" />
+        <img src="./icons/LeftSideBar/one.svg" alt="Logo" class="logo" />
         <h3>ByeWind</h3>
       </div>
 
       <div class="menu-section">
-        <div class="menu-title">Favorites <span>/</span> <span>Recently</span></div>
+        <div class="menu-title">
+          Favorites <span>/</span> <span>Recently</span>
+        </div>
         <ul class="menu-items">
-          <li class="menu-item ">
-            Overview
-          </li>
-          <li class="menu-item">
-            Projects
-          </li>
+          <li class="menu-item">Overview</li>
+          <li class="menu-item">Projects</li>
         </ul>
       </div>
 
@@ -52,19 +73,35 @@
         <div class="menu-title">Dashboards</div>
         <ul class="menu-items">
           <li class="menu-item active">
-            <img src="./icons/IconSetOne.svg" alt="Default" class="menu-icon" />
+            <img
+              src="./icons/LeftSideBar/0.svg"
+              alt="Default"
+              class="menu-icon"
+            />
             Default
           </li>
           <li class="menu-item">
-            <img src="./icons/IconSetTwo.svg" alt="eCommerce" class="menu-icon" />
+            <img
+              src="./icons/LeftSideBar/1.svg"
+              alt="eCommerce"
+              class="menu-icon"
+            />
             eCommerce
           </li>
           <li class="menu-item">
-            <img src="./icons/IconSetThree.svg" alt="Projects" class="menu-icon" />
+            <img
+              src="./icons/LeftSideBar/2.svg"
+              alt="Projects"
+              class="menu-icon"
+            />
             Projects
           </li>
           <li class="menu-item">
-            <img src="./icons/IconSetFour.svg" alt="Online Courses" class="menu-icon" />
+            <img
+              src="./icons/LeftSideBar/3.svg"
+              alt="Online Courses"
+              class="menu-icon"
+            />
             Online Courses
           </li>
         </ul>
@@ -73,53 +110,302 @@
       <div class="menu-section">
         <div class="menu-title">Pages</div>
         <ul class="menu-items">
-            <img src="./icons/IconSet.svg" alt="User Profile" class="menu-icon" />
-            User Profile
-            <ul class="submenu">
-              <li>
-                <img src="./icons/SubmenuDot.svg" alt="" class="submenu-icon" />
-                Overview
-              </li>
-              <li>
-                <img src="./icons/SubmenuDot.svg" alt="" class="submenu-icon" />
-                Projects
-              </li>
-              <li>
-                <img src="./icons/SubmenuDot.svg" alt="" class="submenu-icon" />
-                Campaigns
-              </li>
-              <li>
-                <img src="./icons/SubmenuDot.svg" alt="" class="submenu-icon" />
-                Documents
-              </li>
-              <li>
-                <img src="./icons/SubmenuDot.svg" alt="" class="submenu-icon" />
-                Followers
-              </li>
+          <li class="menu-item with-subitems">
+            <div class="menu-item-header">
+              <img
+                src="./icons/LeftSideBar/4.svg"
+                alt="User Profile"
+                class="menu-icon"
+              />
+              User Profile
+            </div>
+            <ul class="subitems">
+              <li class="subitem">Overview</li>
+              <li class="subitem">Projects</li>
+              <li class="subitem">Campaigns</li>
+              <li class="subitem">Documents</li>
+              <li class="subitem">Followers</li>
             </ul>
           </li>
+
           <li class="menu-item">
-            <img src="./icons/IconSetonee.svg" alt="Account" class="menu-icon" />
+            <img
+              src="./icons/LeftSideBar/5.svg"
+              alt="Account"
+              class="menu-icon"
+            />
             Account
           </li>
+
           <li class="menu-item">
-            <img src="./icons/IconSettwoo.svg" alt="Corporate" class="menu-icon" />
+            <img
+              src="./icons/LeftSideBar/6.svg"
+              alt="Corporate"
+              class="menu-icon"
+            />
             Corporate
           </li>
+
           <li class="menu-item">
-            <img src="./icons/IconSetThreee.svg" alt="Blog" class="menu-icon" />
+            <img src="./icons/LeftSideBar/7.svg" alt="Blog" class="menu-icon" />
             Blog
           </li>
+
           <li class="menu-item">
-            <img src="./icons/IconSetFourr.svg" alt="Social" class="menu-icon" />
+            <img
+              src="./icons/LeftSideBar/8.svg"
+              alt="Social"
+              class="menu-icon"
+            />
             Social
           </li>
         </ul>
       </div>
     </div>
 
-    <!-- Main Content -->
-    <div class="main-content">
+    <!-- Right Sidebar -->
+    <div class="right-sidebar">
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Notifications</h3>
+        <div class="notification-item">
+          <img src="./icons/1st.svg" alt="Social" class="menu-icon" />
+          <div class="item-content">
+            <p>You have a bug that needs...</p>
+            <span class="item-time">Just now</span>
+          </div>
+        </div>
+        <div class="notification-item">
+          <img src="./icons/2nd.svg" alt="Social" class="menu-icon" />
+          <div class="item-content">
+            <p>New user registered</p>
+            <span class="item-time">59 minutes ago</span>
+          </div>
+        </div>
+        <div class="notification-item">
+          <img src="./icons/3rd.svg" alt="Social" class="menu-icon" />
+          <div class="item-content">
+            <p>You have a bug that needs...</p>
+            <span class="item-time">12 hours ago</span>
+          </div>
+        </div>
+        <div class="notification-item">
+          <img src="./icons/4th.svg" alt="Social" class="menu-icon" />
+          <div class="item-content">
+            <p>Andi Lane subscribed to you</p>
+            <span class="item-time">Today, 11:59 AM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Activities</h3>
+        <div class="activity-item">
+          <img src="./icons/5th.svg" alt="Social" class="menu-icon" />
+          <div class="item-content">
+            <p>You have a bug that needs...</p>
+            <span class="item-time">Just now</span>
+          </div>
+        </div>
+        <div class="activity-item">
+          <img src="./icons/6th.svg" alt="Social" class="menu-icon" />
+          <div class="item-content">
+            <p>Released a new version</p>
+            <span class="item-time">59 minutes ago</span>
+          </div>
+        </div>
+        <div class="activity-item">
+          <img src="./icons/7th.svg" alt="Social" class="menu-icon" />
+          <div class="item-content">
+            <p>Submitted a bug</p>
+            <span class="item-time">12 hours ago</span>
+          </div>
+        </div>
+        <div class="activity-item">
+          <img src="./icons/8th.svg" alt="Social" class="menu-icon" />
+          <div class="item-content">
+            <p>Modified A data in Page X</p>
+            <span class="item-time">Today, 11:59 AM</span>
+          </div>
+        </div>
+        <div class="activity-item">
+          <img src="./icons/9th.svg" alt="Social" class="menu-icon" />
+          <div class="item-content">
+            <p>Deleted a page in Project X</p>
+            <span class="item-time">Feb 2, 2023</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Contacts</h3>
+        <div class="contact-item">
+          <img src="./icons/10th.svg" alt="Social" class="menu-icon" />
+          <p class="contact-name">Natali Craig</p>
+        </div>
+        <div class="contact-item">
+          <img src="./icons/11th.svg" alt="Social" class="menu-icon" />
+          <p class="contact-name">Drew Cano</p>
+        </div>
+        <div class="contact-item">
+          <img src="./icons/12th.svg" alt="Social" class="menu-icon" />
+          <p class="contact-name">Orlando Diggs</p>
+        </div>
+        <div class="contact-item">
+          <img src="./icons/13th.svg" alt="Social" class="menu-icon" />
+          <p class="contact-name">Andi Lane</p>
+        </div>
+        <div class="contact-item">
+          <img src="./icons/14th.svg" alt="Social" class="menu-icon" />
+          <p class="contact-name">Kate Morrison</p>
+        </div>
+        <div class="contact-item">
+          <img src="./icons/15th.svg" alt="Social" class="menu-icon" />
+          <p class="contact-name">Koray Okumus</p>
+        </div>
+      </div>
     </div>
+
+    <!-- Content -->
+    <div class="main-content">
+      <div class="content-section">
+        <div class="section-header">
+          <h3 class="section-title">Today</h3>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-label">Views</div>
+            <div class="stat-value">721K</div>
+            <div class="stat-change-wrapper">
+              <span class="stat-change up">+11.01%</span>
+              <img
+                src="./icons/Content-frist-sec/ArrowRise.svg"
+                alt="Rise"
+                class="arrow-icon"
+              />
+            </div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-label">Visits</div>
+            <div class="stat-value">367K</div>
+            <div class="stat-change-wrapper">
+              <span class="stat-change down">-0.03%</span>
+              <img
+                src="./icons/Content-frist-sec/IconSet.svg"
+                alt="Fall"
+                class="arrow-icon"
+              />
+            </div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-label">New Users</div>
+            <div class="stat-value">1,156</div>
+            <div class="stat-change-wrapper">
+              <span class="stat-change up">+15.03%</span>
+              <img
+                src="./icons/Content-frist-sec/ArrowRise.svg"
+                alt="Rise"
+                class="arrow-icon"
+              />
+            </div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-label">Active Users</div>
+            <div class="stat-value">239K</div>
+            <div class="stat-change-wrapper">
+              <span class="stat-change up">+6.08%</span>
+              <img
+                src="./icons/Content-frist-sec/ArrowRise.svg"
+                alt="Rise"
+                class="arrow-icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-two">
+        <div class="second-section">
+          <div class="second-header">
+            <h3 class="second-title">Total Users</h3>
+            <p>Total Projects</p>
+            <p>Operating status</p>
+            <ul>
+              <li>This year</li>
+              <li>Last year</li>
+            </ul>
+          </div>
+          <div class="graph">
+            <div class="chart-container">
+              <img
+                src="./icons/Content-frist-sec/Chart.svg"
+                alt="User statistics chart"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="third-section">
+          <div class="section-header">
+            <h3 class="section-title">Traffic by Website</h3>
+            <div class="third-section-data">
+              <span
+                >Google
+                <img
+                  src="./icons/Content-frist-sec/Content-imgs/One.svg"
+                  alt=""
+              /></span>
+              <span
+                >YouTube
+                <img
+                  src="./icons/Content-frist-sec/Content-imgs/Two.svg"
+                  alt=""
+              /></span>
+              <span
+                >Instagram
+                <img
+                  src="./icons/Content-frist-sec/Content-imgs/Three.svg"
+                  alt=""
+              /></span>
+              <span
+                >Pinterest
+                <img
+                  src="./icons/Content-frist-sec/Content-imgs/Four.svg"
+                  alt=""
+              /></span>
+              <span
+                >Facebook
+                <img
+                  src="./icons/Content-frist-sec/Content-imgs/Five.svg"
+                  alt=""
+              /></span>
+              <span
+                >Twitter
+                <img
+                  src="./icons/Content-frist-sec/Content-imgs/Six.svg"
+                  alt=""
+              /></span>
+              <span
+                >Tumblr
+                <img
+                  src="./icons/Content-frist-sec/Content-imgs/Seven.svg"
+                  alt=""
+              /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", function () {
+          document.querySelector(".left-sidebar").classList.toggle("active");
+        });
+    </script>
   </body>
 </html>
